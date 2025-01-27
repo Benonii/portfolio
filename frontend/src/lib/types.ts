@@ -6,3 +6,9 @@ export interface ProjectProps {
     gitHubURL: string;
     projectURL: string;
 }
+
+export interface BlogProps {
+    title: string;
+    description: string;
+    link: string;
+}

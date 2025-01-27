@@ -10,7 +10,7 @@ function Header() {
         className={
             `fixed top-5 flex flex-row justify-evenly items-center backdrop-blur-sm
              border border-black rounded-3xl gap-4 bg-gray30-transparent
-             w-72 h-[40px] transition-all duration-500 ${isExpanded ? 'w-72' : 'w-20'
+             h-[40px] transition-all duration-500 ${isExpanded ? 'w-64' : 'w-20'
              } `
         }
     >
