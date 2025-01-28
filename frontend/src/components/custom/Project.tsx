@@ -18,10 +18,10 @@ function Project({ title, description, tags, imageURL, gitHubURL, projectURL }: 
             <img src={imageURL} />
         </CardHeader>
         <CardContent>
-            <CardTitle className='mb-2'>
+            <CardTitle className='mb-2 dark:text-gray20'>
                 {title}
             </CardTitle>
-            <div>
+            <div className='dark:text-gray30'>
                 {tags}
             </div>
             <CardDescription className='mt-5 text-left'>
@@ -30,10 +30,10 @@ function Project({ title, description, tags, imageURL, gitHubURL, projectURL }: 
         </CardContent>
         <CardFooter className='flex-row justify-end gap-2'>
             <Button variant='outline' size='icon' className='border'>
-                <a href={gitHubURL} target="_blank" rel="noopener noreferrer" ><Github className='text-gray80'/></a>
+                <a href={gitHubURL} target="_blank" rel="noopener noreferrer" ><Github className='text-gray80 dark:text-gray30'/></a>
             </Button>
             <Button variant='outline' size='icon'>
-                <a href={projectURL} target="_blank" rel="noopener noreferrer" ><Link2 className='text-gray80'/></a>
+                <a href={projectURL} target="_blank" rel="noopener noreferrer" ><Link2 className='text-gray80 dark:text-gray30'/></a>
             </Button>
         </CardFooter>
     </Card>

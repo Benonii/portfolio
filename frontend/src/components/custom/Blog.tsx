@@ -8,17 +8,17 @@ function Blog({ title, description, link }: BlogProps) {
       <div className="flex flex-col items-center ">
           <div className='w-0 h-24 border border-gray30' />
           <Button variant='outline' size='icon' className="rounded-full backdrop-blur-md">
-              <a href={link} target="_blank" rel="noopener noreferrer"><Link2 className="text-gray80"/></a>
+              <a href={link} target="_blank" rel="noopener noreferrer"><Link2 className="text-gray80 dark:text-gray30"/></a>
           </Button>
           <div className='w-0 h-24 border border-gray30' />
 
       </div>
       <div>
-          <div className="text-left max-w-96">
-              <h3 className="font-iceland text-2xl">
+          <div className="text-left max-w-[500px] lg:max-w-[700px]">
+              <h3 className="font-iceland text-2xl lg:text-3xl dark:text-gray20">
                 {title}
               </h3>
-              <p className="font-texturina text-sm mt-4">
+              <p className="font-texturina text-sm mt-4 lg:text-lg dark:text-gray30">
                 {description}
               </p>
           </div>

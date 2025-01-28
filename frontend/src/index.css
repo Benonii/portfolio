@@ -41,7 +41,7 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
+/* 
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -52,26 +52,66 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-}
-button:hover {
+} */
+/* button:hover {
   border-color: #646cff;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 @media (prefers-color-scheme: light) {
-  :root {
+  :root:not(.dark) {
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover {
+  :root:not(.dark) a:hover {
     color: #747bff;
   }
-  button {
+  :root:not(.dark) button {
     background-color: #f9f9f9;
   }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  }
+  :root:not(.light) a:hover {
+    color: #535bf2;
+  }
+  :root:not(.light) button {
+    background-color: #1a1a1a;
+  }
+}
+
+/* Override system preference when .dark or .light class is set */
+:root.dark {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+:root.dark a:hover {
+  color: #535bf2;
+}
+
+:root.dark button {
+  background-color: #1a1a1a;
+}
+
+:root.light {
+  color: #213547;
+  background-color: #ffffff;
+}
+
+:root.light a:hover {
+  color: #747bff;
+}
+
+:root.light button {
+  background-color: #f9f9f9;
 }
 
 @layer base {
@@ -101,6 +141,33 @@ button:focus-visible {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+
+    /* Blues */
+    --blue-primary: 199 95% 46%;  /* #069AE5 */
+    --blue-10: 202 96% 86%;       /* #B9E7FD */
+    --blue-20: 203 95% 76%;       /* #88D5FC */
+    --blue-30: 203 95% 66%;       /* #56C4FB */
+    --blue-40: 203 95% 56%;       /* #24B2F9 */
+    --blue-60: 202 95% 35%;       /* #0579B3 */
+    --blue-70: 209 95% 25%;       /* #03407C */
+    --blue-80: 209 95% 16%;       /* #02294F */
+    --blue-90: 209 95% 6%;        /* #010F1E */
+
+    /* Grays */
+    --gray-10: 0 4% 86%;          /* #DDDADA */
+    --gray-20: 0 4% 76%;          /* #C4BFBF */
+    --gray-30: 0 4% 66%;          /* #ACA5A5 */
+    --gray-40: 0 4% 56%;          /* #948A8A */
+    --gray-primary: 0 4% 46%;     /* #7A7070 */
+    --gray-60: 0 4% 26%;          /* #453F3F */
+    --gray-70: 0 4% 16%;          /* #2B2727 */
+    --gray-80: 0 4% 16%;          /* #2B2727 */
+    --gray-90: 0 4% 6%;           /* #100F0F */
+
+    /* Transparent Grays */
+    --gray-10-transparent: 0 4% 86% / 33%;
+    --gray-30-transparent: 0 4% 66% / 32%;
+    --gray-60-transparent: 0 4% 26% / 32%;
   }
   .dark {
     --background: 224 71.4% 4.1%;
