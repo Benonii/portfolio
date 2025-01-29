@@ -83,7 +83,16 @@ module.exports = {
 			'gray10-transparent': 'hsl(var(--gray-10-transparent))',
 			'gray30-transparent': 'hsl(var(--gray-30-transparent))',
 			'gray60-transparent': 'hsl(var(--gray-60-transparent))',
-  		}
+  		},
+  		keyframes: {
+  			swing: {
+  				'0%, 100%': { transform: 'rotate(-3deg)', transformOrigin: 'top' },
+  				'50%': { transform: 'rotate(3deg)', transformOrigin: 'top' },
+  			},
+  		},
+  		animation: {
+  			swing: 'swing 2s ease-in-out infinite',
+  		},
   	}
   },
   plugins: [require("tailwindcss-animate")],
