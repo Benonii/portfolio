@@ -1,6 +1,6 @@
 function Tag({ text }: { text: string}) {
   return (
-    <p className="p-2 text-gray60 border border-gray60">
+    <p className="text-xs rounded-lg p-1 text-gray60 border border-gray60 font-mono">
       {text}
     </p>
   )

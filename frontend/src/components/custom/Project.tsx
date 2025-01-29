@@ -9,6 +9,7 @@ import {
 import { Button } from '../ui/button';
 import { ProjectProps } from '@/lib/types';
 import { Github, Link, Link2 } from 'lucide-react';
+import Tag from './Tag';
 
 
 function Project({ title, description, tags, imageURL, gitHubURL, projectURL }: ProjectProps) {
@@ -21,8 +22,10 @@ function Project({ title, description, tags, imageURL, gitHubURL, projectURL }: 
             <CardTitle className='mb-2 dark:text-gray20'>
                 {title}
             </CardTitle>
-            <div className='dark:text-gray30'>
-                {tags}
+            <div className='flex flex-wrap flex-row dark:text-gray30 gap-1'>
+                {tags.map((tag: string) => (
+                    <Tag key={tag} text={tag} />
+                ))}
             </div>
             <CardDescription className='mt-5 text-left'>
                 {description}

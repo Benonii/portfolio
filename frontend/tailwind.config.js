@@ -13,7 +13,8 @@ module.exports = {
   		},
 		fontFamily: {
 			iceland: ['Iceland', ...defaultTheme.fontFamily.sans],
-			texturina: ['Texturina', ...defaultTheme.fontFamily.serif]
+			texturina: ['Texturina', ...defaultTheme.fontFamily.serif],
+			mono: ['jetBrainsMono', ...defaultTheme.fontFamily.mono]
 	    },
   		colors: {
   			background: 'hsl(var(--background))',

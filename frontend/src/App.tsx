@@ -88,7 +88,7 @@ function App() {
                 )}
               </Button>
               </div>
-              <div className='mt-20 max-w-[900px]'>
+              <div className='mt-20 max-w-[900px]' id='about'>
                 <h1 
                   className='
                     font-iceland text-4xl font-bold mb-10 mt-10 
@@ -114,7 +114,7 @@ function App() {
             </div>
           </div>
 
-          <div className='mt-10 lg:mt-20 w-full'>
+          <div className='mt-10 lg:mt-20 w-full' id='projects'>
             <h2 className='font-iceland text-3xl font-semibold text-left mb-5 lg:text-4xl'>Projects</h2>
             <div className='grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 gap-y-6'>
               <Project
@@ -143,8 +143,8 @@ function App() {
               />
             </div>
           </div>
-          <div className='mt-10 lg:mt-20 w-full'>
-            <h2 className='font-iceland text-3xl font-semibold text-left mb-5 lg:text-4xl'>Blogs</h2>
+          <div className='mt-10 lg:mt-20 w-full' id='blogs'>
+            <h2 className='font-iceland text-3xl font-semibold text-left mb-5 lg:text-4xl' >Blogs</h2>
             <div className='ml-5'>
               <Blog
                 title='What happens when you type google.com and press enter'
