@@ -14,11 +14,11 @@ function Blog({ title, description, link }: BlogProps) {
 
       </div>
       <div>
-          <div className="text-left max-w-[500px] lg:max-w-[700px]">
-              <h3 className="font-iceland text-2xl lg:text-3xl dark:text-gray20">
+          <div className="text-left max-w-[500px] md:max-w-[700px]">
+              <h3 className="font-iceland text-2xl md:text-3xl dark:text-gray20">
                 {title}
               </h3>
-              <p className="font-texturina text-sm mt-4 lg:text-lg dark:text-gray30">
+              <p className="font-nunito text-sm mt-4 md:text-lg dark:text-gray30">
                 {description}
               </p>
           </div>

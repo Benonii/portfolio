@@ -97,22 +97,22 @@ function App() {
                 <h1 
                   className='
                     font-iceland text-4xl font-bold mb-10 mt-10 
-                    z-50 max-w-full lg:text-5xl dark:text-gray10'
+                    z-50 max-w-full md:text-5xl dark:text-gray10'
                 >
                   Fullstack developer
                 </h1>
-                <p className='text-left text-md font-texturina ml-2 lg:text-lg dark:text-gray20'>
+                <p className='text-left text-md font-nunito ml-2 md:text-lg dark:text-gray20'>
                   My name is Benoni Esckinder. I'm a certified full-stack engineer.
                   I like making my own projects and I work as a freelancer to feed myself.
                 </p>
-                <p className='text-left text-md font-texturina mt-5 ml-2 lg:text-lg text-blue70 dark:text-blue40'>
+                <p className='text-left text-md font-texturina mt-5 ml-2 md:text-lg text-blue70 dark:text-blue40'>
                   I am currently working as a contract developer in a team of 6 engineers.
                   We are building a social  media app for gym lovers.
                 </p>
               </div>
-              <div className='mt-10 lg:mt-20'>
+              <div className='mt-10 md:mt-20'>
                 <Button
-                  className='bg-blue70 text-gray10 hover:bg-blue60'
+                  className='bg-blue70 text-white hover:bg-blue60'
                 >
                   Download resume
                 </Button>
@@ -123,9 +123,9 @@ function App() {
             </div>
           </div>
 
-          <div className='mt-10 lg:mt-20 w-full' id='projects'>
-            <h2 className='font-iceland text-3xl font-semibold text-left mb-5 lg:text-4xl'>Projects</h2>
-            <div className='grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 gap-y-6'>
+          <div className='mt-10 md:mt-20 w-full' id='projects'>
+            <h2 className='font-iceland text-3xl font-semibold text-left mb-5 md:text-4xl'>Projects</h2>
+            <div className='grid place-items-center grid-cols-1 md:grid-cols-3 gap-2 gap-y-6 border'>
               <Project
                 title='Timecraft'
                 description='A comprehensive tool for tracking and reporting how you spend your time'
@@ -168,8 +168,8 @@ function App() {
               />
             </div>
           </div>
-          <div className='mt-10 lg:mt-20 w-full' id='blogs'>
-            <h2 className='font-iceland text-3xl font-semibold text-left mb-5 lg:text-4xl' >Blogs</h2>
+          <div className='mt-10 md:mt-20 w-full' id='blogs'>
+            <h2 className='font-iceland text-3xl font-semibold text-left mb-5 md:text-4xl' >Blogs</h2>
             <div className='ml-5'>
               <Blog
                 title='What happens when you type google.com and press enter'

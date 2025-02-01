@@ -14,7 +14,8 @@ module.exports = {
 		fontFamily: {
 			iceland: ['Iceland', ...defaultTheme.fontFamily.sans],
 			texturina: ['Texturina', ...defaultTheme.fontFamily.serif],
-			mono: ['jetBrainsMono', ...defaultTheme.fontFamily.mono]
+			mono: ['jetBrainsMono', ...defaultTheme.fontFamily.mono],
+			nunito: ['Nunito', ...defaultTheme.fontFamily.serif]
 	    },
   		colors: {
   			background: 'hsl(var(--background))',
