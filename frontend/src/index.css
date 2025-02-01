@@ -170,3 +170,56 @@ h1 {
     @apply bg-background text-foreground;
   }
 }
+
+/* @keyframes animateShake {
+  0% {
+  t
+  }
+  25% {
+    border-image-source: conic-gradient(transparent 90deg, #2563eb 90deg);
+  }
+  50% {
+    border-image-source: conic-gradient(transparent 180deg, #2563eb 180deg);
+  }
+  75% {
+    border-image-source: conic-gradient(transparent 270deg, #2563eb 270deg);
+  }
+  100% {
+    border-image-source: conic-gradient(transparent 360deg, #2563eb 360deg);
+  }
+}
+    
+@layer utilities {
+  .animate-borderRotate {
+    animation: borderRotate 1s linear infinite;
+    border-width: 2px;
+    border-style: solid;
+    border-image-slice: 12;
+    border-radius: 50px; /* Makes it circular */
+  /* }
+} */ 
+
+@keyframes subtleShake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(3px);
+  }
+}
+
+@layer utilities {
+  .shake-on-hover {
+    animation: subtleShake 1s linear;
+    transition: transform 0.2s ease-in-out;
+  }
+}
