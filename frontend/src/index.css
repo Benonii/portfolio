@@ -27,9 +27,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
-a:hover {
-  color: #535bf2;
-}
+
 
 body {
   margin: 0;
@@ -43,37 +41,13 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-/* 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-} */
-/* button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
 
 @media (prefers-color-scheme: light) {
   :root:not(.dark) {
     color: #213547;
     background-color: #ffffff;
   }
-  :root:not(.dark) a:hover {
-    color: #747bff;
-  }
-  :root:not(.dark) button {
-    background-color: #f9f9f9;
-  }
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -84,9 +58,7 @@ button:focus-visible {
   :root:not(.light) a:hover {
     color: #535bf2;
   }
-  :root:not(.light) button {
-    background-color: #1a1a1a;
-  }
+
 }
 
 /* Override system preference when .dark or .light class is set */
@@ -99,9 +71,6 @@ button:focus-visible {
   color: #535bf2;
 }
 
-:root.dark button {
-  background-color: #1a1a1a;
-}
 
 :root.light {
   color: #213547;
@@ -112,21 +81,16 @@ button:focus-visible {
   color: #747bff;
 }
 
-:root.light button {
-  background-color: #f9f9f9;
-}
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 224 71.4% 4.1%;
+    /* --background: 0 0% 100%; */
+    /* --foreground: 224 71.4% 4.1%; */
     --card: 0 0% 100%;
     --card-foreground: 224 71.4% 4.1%;
     --popover: 0 0% 100%;
     --popover-foreground: 224 71.4% 4.1%;
-    --primary: 220.9 39.3% 11%;
-    --primary-foreground: 210 20% 98%;
-    --secondary: 220 14.3% 95.9%;
+    /* --primary: 220.9 39.3% 11%; */
+    /* --secondary: 220 14.3% 95.9%; */
     --secondary-foreground: 220.9 39.3% 11%;
     --muted: 220 14.3% 95.9%;
     --muted-foreground: 220 8.9% 46.1%;
@@ -179,7 +143,6 @@ button:focus-visible {
     --popover: 224 71.4% 4.1%;
     --popover-foreground: 210 20% 98%;
     --primary: 210 20% 98%;
-    --primary-foreground: 220.9 39.3% 11%;
     --secondary: 215 27.9% 16.9%;
     --secondary-foreground: 210 20% 98%;
     --muted: 215 27.9% 16.9%;

@@ -42,8 +42,8 @@ function Header() {
                     className='rounded-full w-[45px] h-[45px] md:w-14 md:h-14' 
                 />
             </div>
-            <div className={`flex items-center gap-12 transition-all duration-1000 ${
-                isExpanded ? 'ml-28 md:ml-32' : 'ml-0'
+            <div className={`flex items-center gap-6 md:gap-12 transition-all duration-1000 ${
+                isExpanded ? 'ml-20 md:ml-32' : 'ml-0'
             }`}>
                 {isExpanded && <a href="#about"><Info width={28} height={28} className='text-blue70 dark:text-gray30 ml-10' /></a>}
                 {isExpanded && <a href="#projects"><MonitorCog width={28} height={28} className='text-blue70 dark:text-gray30'/></a>}

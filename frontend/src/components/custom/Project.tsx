@@ -14,15 +14,15 @@ import Tag from './Tag';
 
 function Project({ title, description, tags, imageURL, gitHubURL, projectURL }: ProjectProps) {
   return (
-    <Card className='w-56 text-left'>
-        <CardHeader>
-            <img src={imageURL} />
+    <Card className='w-56 h-[500px] text-left'>
+        <CardHeader className='flex justify-center h-56'>
+            <img src={imageURL} width={220} height={300} />
         </CardHeader>
         <CardContent>
             <CardTitle className='mb-2 dark:text-gray20'>
                 {title}
             </CardTitle>
-            <div className='flex flex-wrap flex-row dark:text-gray30 gap-1'>
+            <div className='flex flex-wrap flex-row dark:text-gray30 gap-1 w-48'>
                 {tags.map((tag: string) => (
                     <Tag key={tag} text={tag} />
                 ))}
