@@ -8,7 +8,7 @@ import {
 } from '../ui/card';
 import { Button } from '../ui/button';
 import { ProjectProps } from '@/lib/types';
-import { Github, Link, Link2 } from 'lucide-react';
+import { Github, Link2 } from 'lucide-react';
 import Tag from './Tag';
 import CustomTooltip from './CustomTooltip';
 

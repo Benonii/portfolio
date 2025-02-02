@@ -1,10 +1,7 @@
 import { Button } from "../ui/button";
 import { GithubIcon, Linkedin, Send, Twitter } from "lucide-react";
-import { useSoundContext } from "@/context/SoundContext";
 
 function Links() {
-  const { isSoundEnabled } = useSoundContext();
-
   return (
     <div
         className={`fixed top-0 right-3 lg:right-10 flex flex-col items-center justify-start group`}
