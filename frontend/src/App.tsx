@@ -65,7 +65,7 @@ function App() {
       <div className='flex-col items-center justify-start scroll-smooth'>
         <div className='w-full'>
           <div className='relative w-full flex flex-row gap-1'>
-            <div className='w-full'>
+            <section className='w-full'>
               <div className='w-full flex flex-row justify-center items-center'>
                 <Header />
               </div>
@@ -95,10 +95,10 @@ function App() {
                   )}
                 </Button>
               </div>
-              <div className='mt-20 max-w-[900px]' id='about'>
+              <section className='max-w-[900px] p-10' id='about'>
                 <h1 
                   className='
-                    font-iceland text-4xl font-extrabold mb-10 mt-10 
+                    font-iceland text-4xl font-extrabold mb-10 mt-32 
                     z-50 max-w-full md:text-5xl dark:text-gray10'
                 >
                   Fullstack developer
@@ -111,22 +111,26 @@ function App() {
                   I am currently working as a contract developer in a team of 6 engineers.
                   We are building a social  media app for gym lovers.
                 </p>
-              </div>
+              </section>
               <div className='mt-10 md:mt-20'>
                 <a href="/resume.pdf" download={MyResume}>
-                  <Button
-                    className='bg-blue70 text-white hover:bg-blue60 font-iceland text-xl md:text-2xl p-6'
+                <Button
+                  className="relative overflow-hidden bg-blue70 text-white font-iceland text-xl md:text-2xl p-6 transition-all duration-500 ease-in-out 
+                            before:absolute before:inset-0 before:bg-gradient-to-r before:from-blue60 before:to-blue40
+                            before:-translate-x-full before:transition-transform before:duration-500 hover:before:translate-x-0 
+                            hover:before:duration-500 hover:before:ease-out shadow-primaryColor shadow-2xl hover:shadow-lg hover:shadow-primaryColor"
                   >
-                    Download resume
+                    <p className='relative z-40'>Download resume</p>
                   </Button>
+
                 </a>
               </div>
-            </div>
+            </section>
             <div>
               <Links />
             </div>
           </div>
-          <div className='mt-10 md:mt-20 w-full' id='projects'>
+          <div className='mt-10 md:mt-20 w-full p-20' id='projects'>
             <h2 className='font-iceland text-3xl font-semibold text-left mb-5 md:text-4xl'>Projects</h2>
             <div className='grid !items-center !justify-center grid-cols-1 md:grid-cols-3 gap-2 gap-y-6'>
               <Project
@@ -171,7 +175,7 @@ function App() {
               />
             </div>
           </div>
-          <div className='mt-10 md:mt-20 w-full' id='blogs'>
+          <div className='mt-10 md:mt-20 w-full p-20' id='blogs'>
             <h2 className='font-iceland text-3xl font-semibold text-left mb-5 md:text-4xl' >Blogs</h2>
             <div className='ml-5'>
               <Blog

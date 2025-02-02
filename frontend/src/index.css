@@ -227,9 +227,27 @@ h1 {
   }
 }
 
+@keyframes makeButtonShine {
+  0% {
+    background-size: 200%;
+    background-position: -100%;
+  }
+  50% {
+    background-size: 200%;
+    background-position: 50%;
+  }
+  100% {
+    background-size: 200%;
+    background-position: 100%;
+  }
+}
+
 @layer utilities {
   .shake-on-hover {
     animation: subtleShake 1s linear;
     transition: transform 0.2s ease-in-out;
+  }
+  .shine-on-hover {
+    animation: makeButtonShine 1s ease-in-out forwards;
   }
 }

@@ -8,18 +8,18 @@ function Blog({ title, description, link }: BlogProps) {
     <div className="flex flex-row items-center gap-3 group rounde">
 
       <div className="flex flex-col items-center">
-        <div className="w-0 h-24 border border-gray30 group-hover:border-blue60" />
+        <div className="w-0 h-24 border border-gray30 group-hover:border-blue60 dark:group-hover:border-blue40" />
         <Button 
           variant="outline" 
           size="icon" 
-          className="rounded-full backdrop-blur-md border-2 border-transparent group-hover:border-blue60 group-hover:text-blue60"
+          className="rounded-full backdrop-blur-md border-2 border-transparent group-hover:border-blue60 group-hover:text-blue60 dark:group-hover:border-primaryColor"
         >
           <a href={link} target="_blank" rel="noopener noreferrer">
-            <Link2 className="text-gray80 dark:text-gray30 group-hover:text-blue60"/>
+            <Link2 className="text-gray80 dark:text-gray30 group-hover:text-blue60 dark:group-hover:text-blue30"/>
           </a>
         </Button>
 
-        <div className="w-0 h-24 border border-gray30 group-hover:border-blue60" />
+        <div className="w-0 h-24 border border-gray30 group-hover:border-blue60 dark:group-hover:border-blue30" />
       </div>
       <div>
         <div className="text-left max-w-[500px] md:max-w-[700px]">
@@ -33,8 +33,6 @@ function Blog({ title, description, link }: BlogProps) {
         </div>
       </div>
     </div>
-
-
   )
 }
 
