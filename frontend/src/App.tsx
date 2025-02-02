@@ -67,36 +67,35 @@ function App() {
                 <Header />
               </div>
               <div className='mt-20 flex flex-row gap-2 justify-center z-0'>
-              <Button 
-                variant='outline' 
-                size='icon' 
-                className="rounded-full backdrop-blur-md transition-colors duration-700" 
-                onClick={toggleTheme}
-              >
-                {theme === 'dark' ? (
-                  <Sun className='text-gray60 dark:text-gray10 transition-colors duration-700' />
-                ) : (
-                  <Moon className='text-gray60 transition-colors duration-700' />
-                )}
-              </Button>
-                
-              <Button 
-                variant='outline' 
-                size='icon' 
-                className="rounded-full backdrop-blur-md"
-                onClick={toggleSound}
-              >
-                {isSoundEnabled ? (
-                  <Volume2 className='text-gray60 dark:text-gray10'/>
-                ) : (
-                  <VolumeOff className='text-gray60 dark:text-gray10'/>
-                )}
-              </Button>
+                <Button 
+                  variant='outline' 
+                  size='icon' 
+                  className="rounded-full backdrop-blur-md transition-colors duration-700" 
+                  onClick={toggleTheme}
+                >
+                  {theme === 'dark' ? (
+                    <Sun className='text-gray60 dark:text-gray10 transition-colors duration-700' />
+                  ) : (
+                    <Moon className='text-gray60 transition-colors duration-700' />
+                  )}
+                </Button>
+                <Button 
+                  variant='outline' 
+                  size='icon' 
+                  className="rounded-full backdrop-blur-md"
+                  onClick={toggleSound}
+                >
+                  {isSoundEnabled ? (
+                    <Volume2 className='text-gray60 dark:text-gray10'/>
+                  ) : (
+                    <VolumeOff className='text-gray60 dark:text-gray10'/>
+                  )}
+                </Button>
               </div>
               <div className='mt-20 max-w-[900px]' id='about'>
                 <h1 
                   className='
-                    font-iceland text-4xl font-bold mb-10 mt-10 
+                    font-iceland text-4xl font-extrabold mb-10 mt-10 
                     z-50 max-w-full md:text-5xl dark:text-gray10'
                 >
                   Fullstack developer
@@ -105,14 +104,14 @@ function App() {
                   My name is Benoni Esckinder. I'm a certified full-stack engineer.
                   I like making my own projects and I work as a freelancer to feed myself.
                 </p>
-                <p className='text-left text-md font-texturina mt-5 ml-2 md:text-lg text-blue70 dark:text-blue40'>
+                <p className='text-left text-md font-nunito mt-5 ml-2 md:text-lg text-blue70 dark:text-blue40'>
                   I am currently working as a contract developer in a team of 6 engineers.
                   We are building a social  media app for gym lovers.
                 </p>
               </div>
               <div className='mt-10 md:mt-20'>
                 <Button
-                  className='bg-blue70 text-white hover:bg-blue60'
+                  className='bg-blue70 text-white hover:bg-blue60 font-iceland text-xl md:text-2xl p-6'
                 >
                   Download resume
                 </Button>
@@ -122,10 +121,9 @@ function App() {
               <Links />
             </div>
           </div>
-
           <div className='mt-10 md:mt-20 w-full' id='projects'>
             <h2 className='font-iceland text-3xl font-semibold text-left mb-5 md:text-4xl'>Projects</h2>
-            <div className='grid place-items-center grid-cols-1 md:grid-cols-3 gap-2 gap-y-6 border'>
+            <div className='grid !items-center !justify-center grid-cols-1 md:grid-cols-3 gap-2 gap-y-6'>
               <Project
                 title='Timecraft'
                 description='A comprehensive tool for tracking and reporting how you spend your time'
@@ -174,20 +172,25 @@ function App() {
               <Blog
                 title='What happens when you type google.com and press enter'
                 description='A mandatory article I wrote about all the things happening in the background when you make a search'
-                link='your mum'
+                link='https://www.linkedin.com/pulse/what-happens-when-you-type-googlecom-your-browser-press-esckinder-zsfpe?trackingId=kTH17E3eQAObScXI7Zq1qw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3BPM%2FKXzXhT6OoNMMp4YuYrw%3D%3D'
               />
               <Blog
-                title='What happens when you type google.com and press enter'
-                description='A mandatory article I wrote about all the things happening in the background when you make a search'
-                link='your mum'
+                title='TimeCraft: A tale of obsession and solving your own problems'
+                description='A story about how I made my first ever full stack web app'
+                link='https://www.linkedin.com/pulse/timecraft-tale-obsession-creating-solutions-your-own-benoni-esckinder-fcr8e?trackingId=kTH17E3eQAObScXI7Zq1qw%3D%3D&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_recent_activity_content_view%3BFOyBL20wQO%2B%2BzOEAFph6tg%3D%3D'
               />
               <Blog
-                title='What happens when you type google.com and press enter'
-                description='A mandatory article I wrote about all the things happening in the background when you make a search'
-                link='your mum'
+                title='Flying blind and pizza delivery: part I'
+                description='An attempt to make an app with an unfamiliar tech stack and an unrealistic deadline'
+                link='https://medium.com/@besckinder/flying-blind-and-pizza-delivery-part-i-304377e10676'
+              />
+              <Blog
+                title='Flying blind and pizza delivery: part II'
+                description='The second part of an attempt to make an app with an unfamiliar tech stack and an unrealistic deadline'
+                link='https://medium.com/@besckinder/flying-blind-and-pizza-delivery-part-ii-b8a23eb6ab43'
               />
             </div>
-            
+              
           </div>
         </div>
       </div>

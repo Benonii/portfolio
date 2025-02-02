@@ -22,12 +22,12 @@ function Blog({ title, description, link }: BlogProps) {
         <div className="w-0 h-24 border border-gray30 group-hover:border-blue60" />
       </div>
       <div>
-        <div className="text-left max-w-[500px] md:max-w-[700px] group-hover:font-semibold">
-          <h3 className="font-iceland text-2xl md:text-3xl dark:text-gray20 relative group-hover:font-semibold dark:group-hover:text-gray10">
+        <div className="text-left max-w-[500px] md:max-w-[700px]">
+          <h3 className="font-iceland text-2xl md:text-3xl dark:text-gray20 relative dark:group-hover:text-gray10">
             {title}
           </h3>
 
-          <p className="font-nunito text-sm mt-4 md:text-lg dark:text-gray30">
+          <p className="font-nunito text-sm mt-4 md:text-lg dark:text-gray30 group-hover:font-[450]">
             {description}
           </p>
         </div>

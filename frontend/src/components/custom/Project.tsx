@@ -14,7 +14,7 @@ import Tag from './Tag';
 
 function Project({ title, description, tags, imageURL, gitHubURL, projectURL }: ProjectProps) {
   return (
-    <Card className='w-56 h-[500px] text-left'>
+    <Card className='w-56 h-[550px] text-left'>
         <CardHeader className='flex justify-center h-56'>
             <img src={imageURL} width={220} height={300} />
         </CardHeader>
@@ -27,11 +27,11 @@ function Project({ title, description, tags, imageURL, gitHubURL, projectURL }: 
                     <Tag key={tag} text={tag} />
                 ))}
             </div>
-            <CardDescription className='mt-5 text-left'>
+            <CardDescription className='mt-5 text-left h-fit'>
                 {description}
             </CardDescription>
         </CardContent>
-        <CardFooter className='flex-row justify-end gap-2'>
+        <CardFooter className='flex flex-row justify-end gap-2'>
             <Button variant='outline' size='icon' className='border'>
                 <a href={gitHubURL} target="_blank" rel="noopener noreferrer" ><Github className='text-gray80 dark:text-gray30'/></a>
             </Button>
