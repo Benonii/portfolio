@@ -62,14 +62,14 @@ function App() {
 
   return (
     <SoundContext.Provider value={{ isSoundEnabled, toggleSound }}>
-      <div className='flex-col items-center justify-start scroll-smooth'>
+      <div className='absolute md:relative top-0 left-0 flex-col items-center justify-start scroll-smooth dark:bg-gray-950 border border-red-500'>
         <div className='w-full'>
           <div className='relative w-full flex flex-row gap-1'>
             <section className='w-full'>
               <div className='w-full flex flex-row justify-center items-center'>
                 <Header />
               </div>
-              <div className='mt-20 flex flex-row gap-2 justify-center z-0'>
+              <div className='mt-24 flex flex-row gap-2 justify-center'>
                 <Button 
                   variant='outline' 
                   size='icon' 
@@ -95,7 +95,7 @@ function App() {
                   )}
                 </Button>
               </div>
-              <section className='max-w-[900px] p-10' id='about'>
+              <section className='max-w-[900px] py-10 mx-2' id='about'>
                 <h1 
                   className='
                     font-iceland text-4xl font-extrabold mb-10 mt-32 
@@ -130,9 +130,10 @@ function App() {
               <Links />
             </div>
           </div>
-          <div className='mt-10 md:mt-20 w-full p-20' id='projects'>
-            <h2 className='font-iceland text-3xl font-semibold text-left mb-5 md:text-4xl'>Projects</h2>
-            <div className='grid !items-center !justify-center grid-cols-1 md:grid-cols-3 gap-2 gap-y-6'>
+          <div className='mt-10 md:mt-20 w-full py-20 border border-red-500' id='projects'>
+            <h2 className='font-iceland text-3xl font-semibold text-left mb-5 md:text-4xl ml-5'>Projects</h2>
+            {/* <div className='grid place-content-center grid-cols-1 md:grid-cols-3 gap-2 gap-y-6 ml-10'> */}
+            <div className='flex flex-row flex-wrap justify-center items-start gap-4'>
               <Project
                 title='Timecraft'
                 description='A comprehensive tool for tracking and reporting how you spend your time'
