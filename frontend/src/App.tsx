@@ -113,7 +113,7 @@ function App() {
                 </p>
               </section>
               <div className='mt-10 md:mt-20'>
-                <a href="/resume.pdf" download={MyResume}>
+                <a href={MyResume} download={MyResume}>
                 <Button
                   className="relative overflow-hidden bg-blue70 text-white font-iceland text-xl md:text-2xl p-6 transition-all duration-500 ease-in-out 
                             before:absolute before:inset-0 before:bg-gradient-to-r before:from-blue60 before:to-blue40
