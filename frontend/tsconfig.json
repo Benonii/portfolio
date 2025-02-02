@@ -1,19 +1,16 @@
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.node.json"
-    }
-  ],
   "compilerOptions": {
+    "module": "ESNext",
     "jsx": "react-jsx",
-    "allowJs": true,
+    "moduleResolution": "bundler",
+    "noEmit": true,  // ensure no output is generated
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2020",
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }
-  }
+  },
+  "include": ["src"]
 }
