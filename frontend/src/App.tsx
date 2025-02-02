@@ -62,7 +62,7 @@ function App() {
 
   return (
     <SoundContext.Provider value={{ isSoundEnabled, toggleSound }}>
-      <div className='absolute md:relative top-0 left-0 flex-col items-center justify-start scroll-smooth dark:bg-gray-950 border border-red-500'>
+      <div className='absolute md:relative top-0 left-0 flex-col items-center justify-start scroll-smooth dark:bg-gray-950'>
         <div className='w-full'>
           <div className='relative w-full flex flex-row gap-1'>
             <section className='w-full'>
@@ -130,10 +130,10 @@ function App() {
               <Links />
             </div>
           </div>
-          <div className='mt-10 md:mt-20 w-full py-20 border border-red-500' id='projects'>
+          <div className='mt-10 md:mt-20 w-full py-20' id='projects'>
             <h2 className='font-iceland text-3xl font-semibold text-left mb-5 md:text-4xl ml-5'>Projects</h2>
             {/* <div className='grid place-content-center grid-cols-1 md:grid-cols-3 gap-2 gap-y-6 ml-10'> */}
-            <div className='flex flex-row flex-wrap justify-center items-start gap-4'>
+            <div className='flex flex-row flex-wrap justify-center items-start gap-4 mx-1'>
               <Project
                 title='Timecraft'
                 description='A comprehensive tool for tracking and reporting how you spend your time'
