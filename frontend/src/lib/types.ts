@@ -12,3 +12,8 @@ export interface BlogProps {
     description: string;
     link: string;
 }
+
+export interface CustomTooltipProps {
+    element: React.ReactElement;
+    info: string;
+}

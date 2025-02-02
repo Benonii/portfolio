@@ -10,6 +10,7 @@ import { Button } from '../ui/button';
 import { ProjectProps } from '@/lib/types';
 import { Github, Link, Link2 } from 'lucide-react';
 import Tag from './Tag';
+import CustomTooltip from './CustomTooltip';
 
 
 function Project({ title, description, tags, imageURL, gitHubURL, projectURL }: ProjectProps) {
@@ -32,12 +33,22 @@ function Project({ title, description, tags, imageURL, gitHubURL, projectURL }: 
             </CardDescription>
         </CardContent>
         <CardFooter className='flex flex-row justify-end gap-2'>
-            <Button variant='outline' size='icon' className='border'>
-                <a href={gitHubURL} target="_blank" rel="noopener noreferrer" ><Github className='text-gray80 dark:text-gray30'/></a>
-            </Button>
-            <Button variant='outline' size='icon'>
-                <a href={projectURL} target="_blank" rel="noopener noreferrer" ><Link2 className='text-gray80 dark:text-gray30'/></a>
-            </Button>
+            <CustomTooltip
+                element={
+                    <Button variant='outline' size='icon' className='border'>
+                        <a href={gitHubURL} target="_blank" rel="noopener noreferrer" ><Github className='text-gray80 dark:text-gray30'/></a>
+                    </Button>
+                }
+                info="Github link"
+            />
+            <CustomTooltip
+                element={
+                    <Button variant='outline' size='icon'>
+                        <a href={projectURL} target="_blank" rel="noopener noreferrer" ><Link2 className='text-gray80 dark:text-gray30'/></a>
+                    </Button>
+                }
+                info="Project link"
+            />
         </CardFooter>
     </Card>
   )

@@ -15,7 +15,10 @@ import TimeCraftPic from '@/assets/images/timecraft.png'
 import PizarooPic from '@/assets/images/pizza.jpg';
 import EqubPic from '@/assets/images/equb.jpg';
 import AiisPic from '@/assets/images/aiis.jpg';
-import FreshfetchPic from '@/assets/images/fresh-fetch.png'
+import FreshfetchPic from '@/assets/images/fresh-fetch.png';
+
+import MyResume from "@/assets/Benoni_Esckidner_light.pdf";
+
 
 function App() {
   const [ playLightToDark ] = useSound(LightToDarkSound);
@@ -110,11 +113,13 @@ function App() {
                 </p>
               </div>
               <div className='mt-10 md:mt-20'>
-                <Button
-                  className='bg-blue70 text-white hover:bg-blue60 font-iceland text-xl md:text-2xl p-6'
-                >
-                  Download resume
-                </Button>
+                <a href="/resume.pdf" download={MyResume}>
+                  <Button
+                    className='bg-blue70 text-white hover:bg-blue60 font-iceland text-xl md:text-2xl p-6'
+                  >
+                    Download resume
+                  </Button>
+                </a>
               </div>
             </div>
             <div>
