@@ -95,15 +95,15 @@ function App() {
                   )}
                 </Button>
               </div>
-              <section className='max-w-[900px] py-10 mx-2' id='about'>
+              <div className='max-w-[1200px] py-10 mx-5' id='about'>
                 <h1 
                   className='
                     font-iceland text-4xl font-extrabold mb-10 mt-32 
-                    z-50 max-w-full md:text-5xl dark:text-gray10'
+                    z-50 max-w-full md:text-5xl lg:text-6xl dark:text-gray10'
                 >
                   Fullstack developer
                 </h1>
-                <p className='text-left text-md font-nunito ml-2 md:text-lg dark:text-gray20'>
+                <p className='text-left text-md font-nunito ml-2 md:text-lg lg:text-xl dark:text-gray20'>
                   My name is Benoni Esckinder. I'm a certified full-stack engineer.
                   I like making my own projects and I work as a freelancer to feed myself.
                 </p>
@@ -111,7 +111,7 @@ function App() {
                   I am currently working as a contract developer in a team of 6 engineers.
                   We are building a social  media app for gym lovers.
                 </p>
-              </section>
+              </div>
               <div className='mt-10 md:mt-20'>
                 <a href={MyResume} download={MyResume}>
                 <Button
